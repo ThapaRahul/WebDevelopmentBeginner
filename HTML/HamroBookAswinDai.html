@@ -1,0 +1,539 @@
+
+<!------------------- From Bootstrap -------------------------------------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="wku5_mtSP1ZKloQQi310rOXN3I4RdnXpSm-PBHWsCD4" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mero Book</title>
+
+    <link rel="shortcut icon" type="image/png" href="/static/donate/images/favs.png">
+    <link rel="stylesheet" href="/static/donate/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/static/donate/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/donate/css/animate.min.css">
+    <link rel = "stylesheet" href=" /static/donate/css/stylesheet.css">
+                
+                
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+<!--------------------NAVIGATION----------------------------->
+
+
+    <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type = "button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+
+                <a href="/" class="navbar-brand">Mero Book</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/donate_book/">Donate Book</a></li>
+
+                    
+
+                    
+                    <li><a href="/register/">Register</a></li>
+                    <li><a href="/login/">Login</a></li>
+                    
+
+
+                    
+
+                    <li><a href="/contact_us/">Contact us</a></li>
+                    <img class="beta" src="/static/donate/images/beta-banner_600.png">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+ <!------------------------ End Navigation --------------------------->
+
+
+
+
+<!------------------------- Header ------------------------------------>
+
+      <div id="header" class="header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-xs-12 wow bounceInLeft" data-wow-delay="0.3s">
+                      <h1>Share Your Books !</h1>
+                      <p>Participate on the first ever book sharing platform in Nepal and support them who want to pursue Higher education. This could be your promising step towards building a well educated nation. </p>
+                      <button class="btn btn-md btn-danger"><a href="/donate_book/">Donate Now</a> </button>
+                      <button class="btn btn-md btn-warning"><a href="#search">Search for Books</a></button>
+                  </div>
+                  <div class="col-lg-6 col-md-6" >
+                      <img src="/static/donate/images/Schoolboy_Studying-512.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+   <!-------------------------- End Header --------------------------->
+
+<!---------------------------      searching the book---------------------->
+      <form method="GET" action="/search_list/">
+      <div id="search" class="search">
+          <div class="container">
+              <div class="row">
+                  <h2 class="wow fadeInUp">Search For Books</h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.2s">Search for books here</p>
+
+                  <div class="col-lg-3 col-md-3">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.3s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-book" aria-hidden="true"></i></span>
+                          <input type="text" name="q1" required="" class="form-control" aria-describeby="sizing-addon1" placeholder="Name of book">
+                     </div>
+                  </div>
+
+
+                  <div class="col-lg-2 col-md-2">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.4s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+<!--                          <input type="text" name="q1" class="form-control" aria-describeby="sizing-addon1" placeholder="class">-->
+                        <select class="form-control" required="" name = "q2">
+                            <option value="" disabled selected>Class</option>
+                            
+                             <option value = "1">1</option>
+                            
+                             <option value = "2">2</option>
+                            
+                             <option value = "3">3</option>
+                            
+                             <option value = "4">4</option>
+                            
+                             <option value = "5">5</option>
+                            
+                             <option value = "6">6</option>
+                            
+                             <option value = "7">7</option>
+                            
+                             <option value = "8">8</option>
+                            
+                             <option value = "9">9</option>
+                            
+                             <option value = "10">10</option>
+                            
+                             <option value = "11">11</option>
+                            
+                             <option value = "12">12</option>
+                            
+
+                        </select>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-3">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.5s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-street-view" aria-hidden="true"></i></span>
+                         <select class="form-control" required="" name = "q3">
+                           <option value="" disabled selected>District</option>
+                           
+                            <option value = "Achham">Achham</option>
+                           
+                            <option value = "Arghakhanchi">Arghakhanchi</option>
+                           
+                            <option value = "Baglung">Baglung</option>
+                           
+                            <option value = "Baitadi">Baitadi</option>
+                           
+                            <option value = "Bajhang">Bajhang</option>
+                           
+                            <option value = "Bajura">Bajura</option>
+                           
+                            <option value = "Banke">Banke</option>
+                           
+                            <option value = "Bara">Bara</option>
+                           
+                            <option value = "Bardiya">Bardiya</option>
+                           
+                            <option value = "Bhaktapur">Bhaktapur</option>
+                           
+                            <option value = "Bhojpur">Bhojpur</option>
+                           
+                            <option value = "Chitwan">Chitwan</option>
+                           
+                            <option value = "Dadeldhura">Dadeldhura</option>
+                           
+                            <option value = "Dailekh">Dailekh</option>
+                           
+                            <option value = "Dang">Dang</option>
+                           
+                            <option value = "Darchula">Darchula</option>
+                           
+                            <option value = "Dhading">Dhading</option>
+                           
+                            <option value = "Dhankuta">Dhankuta</option>
+                           
+                            <option value = "Dhanusa">Dhanusa</option>
+                           
+                            <option value = "Dolakha">Dolakha</option>
+                           
+                            <option value = "Dolpa">Dolpa</option>
+                           
+                            <option value = "Doti">Doti</option>
+                           
+                            <option value = "Gorkha">Gorkha</option>
+                           
+                            <option value = "Gulmi">Gulmi</option>
+                           
+                            <option value = "Humla">Humla</option>
+                           
+                            <option value = "Ilam">Ilam</option>
+                           
+                            <option value = "Jajarkot">Jajarkot</option>
+                           
+                            <option value = "Jhapa">Jhapa</option>
+                           
+                            <option value = "Jumla">Jumla</option>
+                           
+                            <option value = "Kailali">Kailali</option>
+                           
+                            <option value = "Kalikot">Kalikot</option>
+                           
+                            <option value = "Kanchanpur">Kanchanpur</option>
+                           
+                            <option value = "Kapilvastu">Kapilvastu</option>
+                           
+                            <option value = "Kaski">Kaski</option>
+                           
+                            <option value = "Kathmandu">Kathmandu</option>
+                           
+                            <option value = "Kavrepalanchok">Kavrepalanchok</option>
+                           
+                            <option value = "Khotang">Khotang</option>
+                           
+                            <option value = "Lalitpur">Lalitpur</option>
+                           
+                            <option value = "Lamjung">Lamjung</option>
+                           
+                            <option value = "Mahottari">Mahottari</option>
+                           
+                            <option value = "Makwanpur">Makwanpur</option>
+                           
+                            <option value = "Manang">Manang</option>
+                           
+                            <option value = "Morang">Morang</option>
+                           
+                            <option value = "Mugu">Mugu</option>
+                           
+                            <option value = "Mustang">Mustang</option>
+                           
+                            <option value = "Myagdi">Myagdi</option>
+                           
+                            <option value = "Nawalparasi">Nawalparasi</option>
+                           
+                            <option value = "Nuwakot">Nuwakot</option>
+                           
+                            <option value = "Okhaldhunga">Okhaldhunga</option>
+                           
+                            <option value = "Palpa">Palpa</option>
+                           
+                            <option value = "Panchthar">Panchthar</option>
+                           
+                            <option value = "Parbat">Parbat</option>
+                           
+                            <option value = "Parsa">Parsa</option>
+                           
+                            <option value = "Pyuthan">Pyuthan</option>
+                           
+                            <option value = "Ramechhap">Ramechhap</option>
+                           
+                            <option value = "Rasuwa">Rasuwa</option>
+                           
+                            <option value = "Rautahat">Rautahat</option>
+                           
+                            <option value = "Rolpa">Rolpa</option>
+                           
+                            <option value = "Rukum">Rukum</option>
+                           
+                            <option value = "Rupandehi">Rupandehi</option>
+                           
+                            <option value = "Salyan">Salyan</option>
+                           
+                            <option value = "Sankhuwasabha">Sankhuwasabha</option>
+                           
+                            <option value = "Saptari">Saptari</option>
+                           
+                            <option value = "Sarlahi">Sarlahi</option>
+                           
+                            <option value = "Sindhuli">Sindhuli</option>
+                           
+                            <option value = "Sindhupalchok">Sindhupalchok</option>
+                           
+                            <option value = "Siraha">Siraha</option>
+                           
+                            <option value = "Solukhumbu">Solukhumbu</option>
+                           
+                            <option value = "Sunsari">Sunsari</option>
+                           
+                            <option value = "Surkhet">Surkhet</option>
+                           
+                            <option value = "Syangja">Syangja</option>
+                           
+                            <option value = "Tanahun">Tanahun</option>
+                           
+                            <option value = "Taplejung">Taplejung</option>
+                           
+                            <option value = "Terhathum">Terhathum</option>
+                           
+                            <option value = "Udayapur">Udayapur</option>
+                           
+                        </select>
+
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-2">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.7s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                         <select class="form-control" required="" name = "q4">
+                            <option value="" disabled selected>Ward</option>
+                            
+                             <option value = "1">1</option>
+                            
+                             <option value = "2">2</option>
+                            
+                             <option value = "3">3</option>
+                            
+                             <option value = "4">4</option>
+                            
+                             <option value = "5">5</option>
+                            
+                             <option value = "6">6</option>
+                            
+                             <option value = "7">7</option>
+                            
+                             <option value = "8">8</option>
+                            
+                             <option value = "9">9</option>
+                            
+                             <option value = "10">10</option>
+                            
+                             <option value = "11">11</option>
+                            
+                             <option value = "12">12</option>
+                            
+                             <option value = "13">13</option>
+                            
+                             <option value = "14">14</option>
+                            
+                             <option value = "15">15</option>
+                            
+                             <option value = "16">16</option>
+                            
+                             <option value = "17">17</option>
+                            
+                             <option value = "18">18</option>
+                            
+                             <option value = "19">19</option>
+                            
+                             <option value = "20">20</option>
+                            
+                             <option value = "21">21</option>
+                            
+                             <option value = "22">22</option>
+                            
+                             <option value = "23">23</option>
+                            
+                             <option value = "24">24</option>
+                            
+                             <option value = "25">25</option>
+                            
+                             <option value = "26">26</option>
+                            
+                             <option value = "27">27</option>
+                            
+                             <option value = "28">28</option>
+                            
+                             <option value = "29">29</option>
+                            
+                             <option value = "30">30</option>
+                            
+                             <option value = "31">31</option>
+                            
+                             <option value = "32">32</option>
+                            
+                             <option value = "33">33</option>
+                            
+                             <option value = "34">34</option>
+                            
+                             <option value = "35">35</option>
+                            
+                         </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2" >
+                       <button class="btn btn-lg wow fadeInUp" data-wow-delay="0.8s" type="submit"> Search</button>
+                  </div>
+
+
+
+
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+      </form>
+
+<!---------------------------      End of searching the book---------------------->
+
+
+      <!------------------------- story1 ------------------------------------>
+
+      <div id="story1" class="story1">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 ">
+                      <h1>I want to help </h1>
+                       <p> A book donation platform could be a highly supportive step towards providing students pursue their dreams of good education with quality study books. You could be the one to support and help them. Lend a hand and help them use your resources advance upwards ! Happy sharing :)  </p>
+                     <button class="btn btn-md btn-hollow"><a href="/register/">Register Now</a></button>
+                  </div>
+                  <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s" >
+                      <img src="/static/donate/images/vvv.png" alt="Hamro Kitab">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+   <!-------------------------- End story1 --------------------------->
+
+  <!---------------------Team changed to how much reached------------------------------------>
+
+      <div id="team" class="team">
+          <div class="container">
+              <div class="row">
+                  <h2 class="wow fadeInUp">join us</h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.4s">We are getting even bigger</p>
+                  <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.6s">
+                      <img src="/static/donate/images/rrrr.png" class="img-circle" alt="">
+                      <!--<h4>22</h4>-->
+                      <h4>Step 1</h4>
+                      <b>Get Registered</b>
+                      <p>Join us today and help students pursue their dreams</p>
+
+                  </div>
+                  <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.4s">
+                      <img src="/static/donate/images/rerl.png" class="img-circle" alt="">
+                      <!--<h4>9 +</h4>-->
+                      <h4>Step 2</h4>
+                      <b>Donate Books </b>
+                      <p> Our goal is to fight against the issue of students leaving their schooling because of a lack of text books</p>
+
+                  </div>
+                  <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.2s">
+                     <img src="/static/donate/images/llll.png" class="img-circle" alt="">
+                      <!--<h4>22</h4>-->
+                      <h4>Step 3</h4>
+                      <b>Benefit From Receiving Books</b>
+                      <p>You can receive books that you need. Just search for a book with the details above in search bar  </p>
+
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <!---END TEAM--->
+
+    <!------------------------- under ------------------------------->
+
+
+     <div id="Featured_Hostels" class="c4n">
+         <div class="container">
+             <h1 class="wow fadeInUp"> project under</h1>
+             <div class="row">
+                 <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.5s"></div>
+
+                 <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInLeft" data-wow-delay="0.7s">
+                      <a href="http://codefornepal.org/en/" target="_blank"> <img src="/static/donate/images/c4n_logo.png" class="c4n_logo" alt=""> </a>
+
+                     <p>This work is licensed under a Creative Commons Attribution - ShareAlike 3.0 License</p>
+                 </div>
+                 <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInLeft" data-wow-delay="0.9s"></div>
+
+             </div>
+         </div>
+     </div>
+
+
+     <!-------------------end   under------------------------------>
+
+
+
+<!------------------------Footer------------------------------------->
+
+              <div id="footer" class="footer">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-4 col-md-4 footerko">
+                              <h4 class="wow fadeInUp">Contact Us</h4>
+                              <p><i class="fa fa-home" aria hidden="true"></i>  contact@codefornepal.org</p>
+                              <p><i class="fa fa-phone" aria hidden="true"></i>  +977+984-561-2181</p>
+                              <p><i class="fa fa-globe" aria hidden="true"></i>  www.merobook.org</p>
+                          </div>
+                          <div class="col-lg-4 col-md-4 footerko">
+
+                              <p>|</p>
+                              <p>|</p>
+                              <p>|</p>
+                              <p>|</p>
+                              <p>|</p>
+
+
+
+                          </div>
+                          <div class="col-lg-4 col-md-4 footerko">
+                              <h4 class="wow fadeInUp">Stay In Touch</h4>
+                              <a href="https://www.facebook.com/codefornepal" target="_blank"><i class="social fa fa-facebook " style="color: #3B5998" aria hidden="true"></i></a>
+                              <a href="https://www.twitter.com/codefornepal" target="_blank"><i class="social fa fa-twitter " style="color: #1DA1F2" aria hidden="true"></i></a>
+                              <a href="https://www.youtube.com/codefornepal" target="_blank"><i class="social fa fa-youtube " style="color:red" aria hidden="true"></i></a>
+                              <a href="https://github.com/Code4Nepal" target="_blank"><i class="social fa fa-github " style="color: white" aria hidden="true"></i><br></a>
+                           </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!-- -------------     this is for the animation-->
+      <script src="/static/donate/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+<!-------------ed animation------------------->
+    <script src="/static/donate/js/bootstrap.min.js"></script>
+  </body>
+</html>

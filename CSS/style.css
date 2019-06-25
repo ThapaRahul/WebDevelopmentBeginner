@@ -1,0 +1,56 @@
+/* Selector {
+    Property: value;
+} */
+
+/* Cascading Style Sheet (CSS) */
+* {
+    text-align: right;
+}
+
+body {
+    background-image: url("sky.jpg");
+    background-size: cover;
+}
+p{
+    color: #C53C3C;
+    text-align: center;
+    border: 5px solid rgba(240, 123, 123, 0.5);
+    cursor: pointer;
+}
+
+img { 
+    float: right;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+p {
+    line-height: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font- size: 100%;
+    font-family: 'Poiret One', cursive;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext:first-child {
+    border: 5px dashed green;
+}
+
+.active {
+    color: red;
+}
+
+#div1 {
+    background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+    background: rgba(255, 0, 0 , 0.2)
+}
